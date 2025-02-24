@@ -7,6 +7,8 @@ nav ul{
   list-style: none;
   width: 100%;
   overflow: hidden;
+  z-index: 0;
+  position: relative;
 }
 nav li{
   padding: 15px;
@@ -21,13 +23,4 @@ nav ul a:hover{
 }
 .CV{
   margin-left: auto;
-  border: 2px solid green;
-  border-radius: 20px;
-  padding: 10px;
-  transition: all 0.2s;
-}
-.CV:hover{
-  background-color: #1d9d1d;
-  cursor: pointer;
-  transform: scale(1.1);
 }

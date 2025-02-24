@@ -4,6 +4,7 @@
 
 }
 .social{
+  font-size: 1.3em;
   color: white;
   text-decoration: none;
   background-color: #060606;
@@ -17,7 +18,7 @@
   min-width: 120px;
 }
 .social:hover{
-  transform: translateX(5px) translateY(5px);
+  transform: translateX(-2px) translateY(-2px);
 }
 .social-back{
   position: absolute;
@@ -31,6 +32,6 @@
 }
 svg{
   fill: #007700;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
