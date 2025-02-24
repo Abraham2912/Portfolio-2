@@ -21,7 +21,7 @@ nav ul a:hover{
 }
 .CV{
   margin-left: auto;
-  border: 3px solid green;
+  border: 2px solid green;
   border-radius: 20px;
   padding: 10px;
   transition: all 0.2s;
