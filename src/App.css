@@ -1,9 +1,0 @@
-.grid-pattern {
-  position: absolute;
-  inset: 0;
-  background-color: #0a0a0a; /* Fondo negro */
-  background-image: 
-    linear-gradient(rgba(30, 255, 0, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(30, 255, 0, 0.1) 1px, transparent 1px);
-  background-size: 36px 30px; /* Tamaño de cada celda de la cuadrícula */
-}

@@ -1,0 +1,33 @@
+nav ul{
+  display: flex;
+  align-items: center;
+  background-color: #0a0a0a; /* Fondo negro */
+  border-bottom: 1px solid green;
+  padding: 5px;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+nav li{
+  padding: 15px;
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav ul a:hover{
+  color: green;
+}
+.CV{
+  margin-left: auto;
+  border: 3px solid green;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.2s;
+}
+.CV:hover{
+  background-color: #1d9d1d;
+  cursor: pointer;
+  transform: scale(1.1);
+}
