@@ -7,4 +7,96 @@ header{
   width: 100%;
   height: 100vh;
   color: white;
+  position: relative;
+  z-index: -2;
+}
+.header-content{
+  display: flex;
+  height: 90%;
+}
+.header-content > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header-img img{
+  width: 50%;
+}
+.available{
+  /* background-color: #43c343; */
+  background-color: #0a0a0a;
+  font-weight: 500;
+  padding: 10px;
+  margin: 20px;
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+}
+.available::after{
+  --angle: 0deg;
+  content: '';
+  z-index: -1;
+  background: conic-gradient(from var(--angle),transparent 35%, #68e868);  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 15px;
+  padding: 2px;
+  animation: animated-border infinite 2s linear;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes animated-border {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+.available::before{
+  --angle-bef: 180deg;
+  content: '';
+  z-index: -1;
+  background: conic-gradient(from var(--angle-bef),transparent 35%, #68e868);  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 15px;
+  padding: 2px;
+  animation: animated-border-bef infinite 2s linear;
+}
+@property --angle-bef {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes animated-border-bef {
+  0% {
+    --angle-bef: 180deg;
+  }
+  100% {
+    --angle-bef: 540deg;
+  }
+}
+
+.presentation-container p{
+  max-width: 500px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1.4em;
+}
+.social-media{
+  display: flex;
+  gap: 15px;
 }
