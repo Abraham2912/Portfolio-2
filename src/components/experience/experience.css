@@ -1,0 +1,25 @@
+.experience-content{
+  padding: 25px;
+  border: 1px solid green;
+  margin-bottom: 10px;
+  background-color: #060606;
+}
+.experience-title{
+  width: fit-content;
+  /* color: #1d9d1d; */
+  background: linear-gradient(137deg, rgba(67,195,67,1) 0%, rgba(29,157,29,1) 60%, rgba(104,232,104,1) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.experience-description{
+  list-style-position: inside;
+  padding: 5px;
+}
+.experience-description li{
+  margin-bottom: 10px;
+}
+.experience-date{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}

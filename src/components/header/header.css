@@ -9,6 +9,7 @@ header{
   color: white;
   position: relative;
   z-index: -2;
+  /* border-bottom: 1px solid #008000; */
 }
 .header-content{
   display: flex;
@@ -99,4 +100,31 @@ header{
 .social-media{
   display: flex;
   gap: 15px;
+}
+
+.angular{
+  /* background: rgb(239,8,17); */
+  background: linear-gradient(90deg, rgba(239,8,17,1) 0%, rgba(240,50,209,1) 31%, rgba(128,5,250,1) 69%);
+  background-clip:text; /* Propiedad que permite que el fondo se aplique solo al texto */
+  -webkit-text-fill-color: transparent; /* Propiedad que permite que el texto sea transparente y así solo se vea el background con la forma del texto*/
+}
+
+.flecha{
+  color: white;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  font-weight: bolder;
+  font-size: 24px;
+  transform: translate(-50%, -50%) rotate(90deg);
+  animation: ease-in-out 1s infinite alternate flecha;
+}
+@keyframes flecha{
+  0%{
+    top: 95%;
+  }
+  100%{
+    top: 90%;
+  }
+  
 }

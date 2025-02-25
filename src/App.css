@@ -1,0 +1,15 @@
+main{
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+  color: white;
+}
+.experience-container{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.experience-list{
+  margin-top: 10px;
+  list-style: none;
+}
