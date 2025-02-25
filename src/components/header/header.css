@@ -1,11 +1,11 @@
 header{
-  background-color: #0a0a0a; /* Fondo negro */
+  /* background-color: #0a0a0a; /* Fondo negro 
   background-image: 
     linear-gradient(rgba(30, 255, 0, 0.1) 1px, transparent 1px),
     linear-gradient(90deg, rgba(30, 255, 0, 0.1) 1px, transparent 1px);
-  background-size: 30px 30px; /* Tamaño de cada celda de la cuadrícula */
+  background-size: 30px 30px; Tamaño de cada celda de la cuadrícula */
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   position: relative;
   z-index: -2;
@@ -14,13 +14,25 @@ header{
 .header-content{
   display: flex;
   height: 90%;
+  flex-wrap: wrap;
+  /* flex-wrap: wrap; Esto seria para hacerlo responsive, la cuestión sería ponerle que sea 50% el with de los div directamente hijos de header content para que el tamaño de desktop no se rompa el estilo, por lo que en el tamaño movil sería de 50% de width*/
 }
 .header-content > div{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 50%;
+  text-align: center;
+}
+@media (width <= 750px){
+  .header-content > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .header-img img{
   width: 50%;

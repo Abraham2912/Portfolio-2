@@ -5,9 +5,9 @@ function Nav() {
   return(
     <nav>
       <ul>
+        <a href="#experience"><li>Experiencia</li></a>
+        <a href="#projects"><li>Proyectos</li></a>
         <a href="#"><li>Sobre mi</li></a>
-        <a href="#experience-anchor"><li>Experiencia</li></a>
-        <a href="#"><li>Proyectos</li></a>
         <li className="CV">
         <Social
           icono={
