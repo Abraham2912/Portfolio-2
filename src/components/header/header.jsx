@@ -1,6 +1,7 @@
 import "./header.css"
 import Nav from "../nav/nav.jsx"
 import Social from "../social/social.jsx"
+import Abraham from "../../assets/abraham.jfif"
 
 function Header() {
   return (
@@ -8,7 +9,8 @@ function Header() {
       <Nav/>
       <div className="header-content">
         <div className="header-img">
-          <img src="https://images.pexels.com/photos/30770767/pexels-photo-30770767/free-photo-of-bala-royal-enfield.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de stock" />
+          {/* <img src="https://images.pexels.com/photos/30770767/pexels-photo-30770767/free-photo-of-bala-royal-enfield.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de stock" /> */}
+          <img src={Abraham} alt="Abraham" /> 
           <span className="available">
             Disponible para trabajar
           </span>
@@ -37,7 +39,13 @@ function Header() {
             />
           </div>
         </div>
+        <span className="flecha">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48   48">
+          <path d="M22 26h17.172l-6.586 6.586c-.781.781-.781 2.047 0 2.828C32.976 35.805 33.488 36 34 36s1.024-.195 1.414-.586l10-10C45.789 25.04 46 24.531 46 24s-.21-1.039-.586-1.414l-10-10c-.78-.781-2.048-.781-2.828 0-.781.781-.781 2.047 0 2.828L39.171 22H22c-1.104 0-2 .896-2 2S20.896 26 22 26zM10 22A2 2 0 1010 26 2 2 0 1010 22zM16 22A2 2 0 1016 26 2 2 0 1016 22zM4 22A2 2 0 104 26 2 2 0 104 22z"></path>
+          </svg>
+        </span>
       </div>
+
     </header>
   );
 }

@@ -1,13 +1,14 @@
 import "./nav.css"
 import Social from "../social/social.jsx"
+import cv from "../../assets/CV.pdf"
 
 function Nav() {
   return(
     <nav>
       <ul>
-        <a href="#"><li>Sobre mi</li></a>
-        <a href="#"><li>Experiencia</li></a>
-        <a href="#"><li>Proyectos</li></a>
+        <a href="#experience"><li>Experiencia</li></a>
+        <a href="#projects"><li>Proyectos</li></a>
+        <a href="#about-me"><li>Sobre mi</li></a>
         <li className="CV">
         <Social
           icono={
@@ -16,7 +17,7 @@ function Nav() {
             </svg>
           }
           texto="DESCARGAR  CV"
-          enlace="#"
+          enlace={cv}
         >
         </Social>
         </li>

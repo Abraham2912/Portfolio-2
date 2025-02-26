@@ -1,0 +1,62 @@
+main{
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+  color: white;
+  padding: 30px;
+}
+.experience-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: #0a0a0a;
+  padding: 30px;
+  border: 1px solid green;
+}
+.experience-list{
+  margin-top: 10px;
+  list-style: none;
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 15px;
+  background-color: #0a0a0a;
+  padding: 30px;
+  border: 1px solid green;
+}
+.projects-list{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.about-me-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.about-me-content{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  border: 1px solid green;
+  background-color: #0a0a0a;
+}
+.about-me-text{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #060606;
+  padding: 30px;
+  border: 1px solid green;
+}
