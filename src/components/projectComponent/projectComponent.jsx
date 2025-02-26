@@ -1,16 +1,17 @@
+/* eslint-disable react/prop-types */
 import './projectComponent.css';
-import proyectoIMG from "../../assets/513shots_so.png"
 import Social from '../social/social';
 
-function ProjectComponent(){
+function ProjectComponent({img, title, technologies, description, enlace}) {
+  console
   return(
     <>
       <div className='project-content'>
-        <img src={proyectoIMG} alt="Proyecto" className='project-img'/>
+        <img src={img} alt="Proyecto" className='project-img'/>
         <div className='project-info'>
-          <h3 className='project-title'>Hola mundo</h3>
+          <h3 className='project-title'>{title}</h3>
           <div className='project-technologies-container'>
-            <span className='project-technologies'>
+            {/* <span className='project-technologies'>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">
                 <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />
                 <path fill="#ef652a" d="M226 472l149-41 35-394H226" />
@@ -23,9 +24,12 @@ function ProjectComponent(){
             <span className='project-technologies'>
               <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="#264de4" d="M71.357 460.819 30.272 0h451.456l-41.129 460.746L255.724 512z"/><path fill="#2965f1" d="m405.388 431.408 35.148-393.73H256v435.146z"/><path fill="#ebebeb" d="m124.46 208.59 5.065 56.517H256V208.59zm-5.041-57.875H256V94.197H114.281zM256 355.372l-.248.066-62.944-16.996-4.023-45.076h-56.736l7.919 88.741 115.772 32.14.26-.073z"/><path fill="#fff" d="M255.805 208.59v56.517H325.4l-6.56 73.299-63.035 17.013v58.8l115.864-32.112.85-9.549 13.28-148.792 1.38-15.176 10.203-114.393H255.805v56.518h79.639L330.3 208.59z"/></svg>
               CSS3
-            </span>
+            </span> */}
+            {technologies.map((technology, index) => {
+              return technology
+            })}
           </div>
-          <p className='project-description'>Este es un proyecto de prueba Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quasi enim? Dolorem ullam et architecto qui, explicabo sapiente debitis ratione, ipsa placeat fuga inventore exercitationem nisi, quibusdam beatae error assumenda.</p>
+          <p className='project-description'>{description}</p>
           <Social texto="code" 
             icono={        
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">

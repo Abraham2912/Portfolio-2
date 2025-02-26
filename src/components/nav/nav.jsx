@@ -1,5 +1,6 @@
 import "./nav.css"
 import Social from "../social/social.jsx"
+import cv from "../../assets/CV.pdf"
 
 function Nav() {
   return(
@@ -16,7 +17,7 @@ function Nav() {
             </svg>
           }
           texto="DESCARGAR  CV"
-          enlace="#"
+          enlace={cv}
         >
         </Social>
         </li>
