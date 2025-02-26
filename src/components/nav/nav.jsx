@@ -8,7 +8,7 @@ function Nav() {
       <ul>
         <a href="#experience"><li>Experiencia</li></a>
         <a href="#projects"><li>Proyectos</li></a>
-        <a href="#"><li>Sobre mi</li></a>
+        <a href="#about-me"><li>Sobre mi</li></a>
         <li className="CV">
         <Social
           icono={

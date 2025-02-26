@@ -74,6 +74,16 @@ function App() {
             <ProjectComponent></ProjectComponent> */}
           </div>
         </div>
+        <div className='about-me-container'>
+          <div className='about-me-content'>
+            <h1 id='about-me'>sobre mi</h1>
+            <div className='about-me-text'>
+              <p>Mi nombre es Abraham Jesús Lorenzo Guerra, recientemente he terminado el CFGS de desarrollo de aplicaciones web en el que he podido desarrollador mis habilidades de programación así como mis habilidades blandas.</p>
+              <p>Durante mi estancia en el ciclo superior pude aprender a desarrollar aplicaciones web mediante el uso de C# gracias al framework .NET, Java mediante spring boot y a diseñar aplicaciones mediante HTML, CSS y JS. Además de eso para el proyecto final del ciclo usamos React para la parte del front y conectarnos a una API desarrollada en Spring.</p>
+              <p>Actualmente me encuentro buscando empleo como desarrollador web junior full stack.</p>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   )

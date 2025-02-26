@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 500px;
   border: 1px solid green;
-  background-color: #0a0a0a;
+  background-color: #060606;
   transition: all 0.3s;
 }
 .project-content:hover{
