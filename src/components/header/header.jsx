@@ -1,7 +1,7 @@
 import "./header.css"
 import Nav from "../nav/nav.jsx"
 import Social from "../social/social.jsx"
-import Abraham from "../../assets/abraham.jfif"
+import Abraham from "../../assets/Abraham.jfif"
 
 function Header() {
   return (
