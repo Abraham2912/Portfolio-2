@@ -1,7 +1,8 @@
 .project-content{
   display: flex;
   flex-direction: column;
-  width: 500px;
+  /* width: 500px; */
+  width: 40%;
   border: 1px solid green;
   background-color: #060606;
   transition: all 0.3s;
@@ -23,6 +24,7 @@
 .project-technologies-container{
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .project-technologies{
   display: flex;
@@ -32,4 +34,25 @@
   padding: 6px;
   border-radius: 15px;
   border: 1px solid green;
+}
+@media (width <780px){
+  .project-content{
+    width: 100%;
+  }
+  .project-info{
+    padding: 10px;
+  }
+}
+@media (width>780px) and (width<1200px){
+
+  .project-info{
+    padding: 15px;
+  }
+  .project-content{
+    width: 80%;
+  }
+  .project-info{
+    padding: 15px;
+  }
+  
 }

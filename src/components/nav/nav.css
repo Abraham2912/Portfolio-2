@@ -24,3 +24,14 @@ nav ul a:hover{
 .CV{
   margin-left: auto;
 }
+
+@media (width <700px){
+  nav ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .CV{
+    margin: 0 auto;
+  }
+} 
