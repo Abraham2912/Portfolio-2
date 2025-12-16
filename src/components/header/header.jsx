@@ -11,9 +11,9 @@ function Header() {
         <div className="header-img">
           {/* <img src="https://images.pexels.com/photos/30770767/pexels-photo-30770767/free-photo-of-bala-royal-enfield.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de stock" /> */}
           <img src={Abraham} alt="Abraham" /> 
-          <span className="available">
+          {/* <span className="available">
             Disponible para trabajar
-          </span>
+          </span> */}
         </div>
         <div className="presentation-container">
           <h1>¡Hola! Soy <span className="name">Abraham Lorenzo</span></h1>
